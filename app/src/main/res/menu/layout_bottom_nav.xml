@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/call_api"
+        android:title="@string/action_callapi" />
+
+    <item
+        android:id="@+id/pos_api"
+        android:title="@string/action_postapi" />
+
+    <item
+        android:id="@+id/view_pager"
+        android:title="@string/action_viewpager" />
+</menu>

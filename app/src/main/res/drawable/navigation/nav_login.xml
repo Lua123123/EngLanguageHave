@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_login"
+    app:startDestination="@id/loginFragmentOn">
+
+    <fragment
+        android:id="@+id/loginFragmentOn"
+        android:name="com.example.englanguage.offlinemode.LoginFragmentOn"
+        android:label="LoginFragmentOn" >
+        <action
+            android:id="@+id/action_loginFragmentOn_to_loginFragmentOff"
+            app:destination="@id/loginFragmentOff" />
+        <action
+            android:id="@+id/action_loginFragmentOn_to_signUpActivity"
+            app:destination="@id/signUpActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragmentOff"
+        android:name="com.example.englanguage.offlinemode.LoginFragmentOff"
+        android:label="fragment_login_off"
+        tools:layout="@layout/fragment_login_off" >
+        <action
+            android:id="@+id/action_loginFragmentOff_to_loginFragmentOn"
+            app:destination="@id/loginFragmentOn" />
+        <action
+            android:id="@+id/action_loginFragmentOff_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/loginFragmentOff"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <activity
+        android:id="@+id/signUpActivity"
+        android:name="com.example.englanguage.SignUpActivity"
+        android:label="activity_sign_up"
+        tools:layout="@layout/activity_sign_up" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.englanguage.offlinemode.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_vocabularyFragment"
+            app:destination="@id/vocabularyFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_mainFragment_to_topicFragment"
+            app:destination="@id/topicFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/vocabularyFragment"
+        android:name="com.example.englanguage.offlinemode.vocabularyoffline.VocabularyFragment"
+        android:label="VocabularyFragment" >
+        <action
+            android:id="@+id/action_vocabularyFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/topicFragment"
+        android:name="com.example.englanguage.offlinemode.topicoffline.TopicFragment"
+        android:label="fragment_topic"
+        tools:layout="@layout/fragment_topic" >
+        <action
+            android:id="@+id/action_topicFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name"></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_callapi">Call API</string>
+    <string name="action_postapi">Post API</string>
+    <string name="action_viewpager">View Pager</string>
+    <string name="satisfaction">Sự hài lòng của bạn được bảo đảm, hoặc là bạn sẽ được nhận lại tiền của mình</string>
+    <string name="productive">Hội nghị kinh doanh phi lợi nhuận đã làm cho nhiều nhân viên phàn nàn</string>
+    <string name="persuasion">Hội thảo giảng dạy những kỹ thuật thuyết phục để gia tăng doanh số</string>
+    <string name="market">Thị trường của trang phục màu sắc sặc sỡ rất phát đạt vào năm ngoái, nhưng nó lại chuyển động uể oải trong năm nay</string>
+    <string name="agreement">Theo như thỏa thuận, nhà cung cấp lương thực thực phẩm cũng sẽ cung cấp hoa cho sự kiện</string>
+    <string name="inspiration">Công việc của anh ta là một nguồn cảm hứng cho bộ phận tiếp thị</string>
+    <string name="fad">Váy ngắn là mốt tạm thời mỗi khi ý tưởng bị hết, nhưng hiện giờ nó đang quay trở lại</string>
+    <string name="currently">Hiện nay, khách hàng đang đòi hỏi những khoản giảm giá nhiều cho những đơn hàng lớn</string>
+    <string name="convince">Anh ấy đã thuyết phục tôi rằng anh ấy đã đúng</string>
+    <string name="consume">Cái máy in ngốn nhiều ống mực hơn là cái máy in ở dưới nhà</string>
+    <string name="competition">Trong cuộc thi của các quán ăn chiều, của hàng Hector đã được xếp hạng nhất</string>
+    <string name="compare">Khi mà người khách hàng được so sánh 2 sản phẩm, sự lựa chọn của cô ta sẽ dễ dàng hơn</string>
+    <string name="attract">Việc trưng bày đã thu hút được một số người tại hội nghị</string>
+    <string name="abideby">Hai bên đã đồng ý tuân theo quyết định của tòa án</string>
+    <string name="cancellation">Việc hủy chuyến bay đã gây cho cô ấy nhiều vấn đề trong những ngày còn lại của tuần</string>
+    <string name="assurance">Đối tác bán hàng cam đoan rằng ngày mai bàn phím lỗi sẽ được thay</string>
+    <string name="determine">Sau khi đọc hợp đồng, tôi vẫn không thể biết được liệu rằng công ty của chúng tôi có phải chịu trách nhiệm hoàn trả lại lương không</string>
+    <string name="engage">Anh ấy cùng chúng tôi thảo luận sôi nổi về luật kinh doanh hiện hành</string>
+    <string name="establish">Sự liên kết giữa 2 công ty tạo nên một tập đoàn kinh tế hùng mạnh</string>
+    <string name="resolve">Cuối tuần, người quản lý đã quyết định xóa sạch tất cả các dữ liệu</string>
+    <string name="specific">Khiếu nại cụ thể của khách hàng đã không được giải quyết trong Email gửi anh ấy</string>
+    <string name="provision">Người cha đã truyền lại di chúc cho những đứa con của mình</string>
+</resources>

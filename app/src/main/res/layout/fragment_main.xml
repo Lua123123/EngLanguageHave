@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/nearBlack"
+        tools:context=".offlinemode.MainFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/brandon2"
+                android:padding="10dp"
+                android:text="CATEGORIES"
+                android:textAllCaps="true"
+                android:textColor="@color/gold"
+                android:textSize="35sp" />
+
+            <RelativeLayout
+                android:id="@+id/topicOffline"
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/main_background2"
+                    android:elevation="10dp"
+                    android:translationZ="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/brandon2"
+                        android:padding="25dp"
+                        android:text="TOPIC"
+                        android:textColor="@color/nearBlack"
+                        android:textColorHint="@color/black"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:padding="20dp"
+                        android:text="EXPAND ALL"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="160dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="-4dp"
+                    android:elevation="10dp"
+                    android:src="@drawable/book"
+                    android:translationZ="10dp" />
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardBackgroundColor="#00000000"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:id="@+id/vocabularyOffline"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/main_background1_1"
+                    android:elevation="10dp"
+                    android:translationZ="10dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="@drawable/main_background1" />
+
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="140dp"
+                        android:layout_marginLeft="10dp"
+                        android:elevation="10dp"
+                        android:src="@drawable/vocabulary"
+                        android:translationZ="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/brandon2"
+                        android:padding="25dp"
+                        android:text="VOCABULARY"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:padding="20dp"
+                        android:text="EXPAND ALL"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:id="@+id/speak"
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/main_background3_1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="@drawable/main_background3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/brandon2"
+                        android:padding="25dp"
+                        android:text="SPEAK"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/black"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:padding="20dp"
+                        android:text="EXPAND ALL"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="135dp"
+                    android:layout_height="170dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="-18dp"
+                    android:src="@drawable/speaker" />
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardBackgroundColor="#00000000"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:id="@+id/flipcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/main_background4"
+                    android:elevation="10dp"
+                    android:translationZ="10dp">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:elevation="10dp"
+                        android:src="@drawable/cards"
+                        android:translationZ="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/brandon2"
+                        android:padding="24dp"
+                        android:text="FLIP CARDS"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:padding="20dp"
+                        android:text="EXPAND ALL"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:id="@+id/online_mode"
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/flipcard">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="@drawable/flipcard" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/brandon2"
+                        android:padding="25dp"
+                        android:text="ONLINE MODE"
+                        android:textColor="@color/goldPart2"
+                        android:textColorHint="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:padding="20dp"
+                        android:text="EXPAND ALL"
+                        android:textColor="@color/nearBlack"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="135dp"
+                    android:layout_height="170dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="-18dp"
+                    android:src="@drawable/sun" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</layout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_flip_off"
+    app:startDestination="@id/viewPagerFragmentOff">
+    <fragment
+        android:id="@+id/viewPagerFragmentOff"
+        android:name="com.example.englanguage.offlinemode.fragmentflipcardoff.ViewPagerFragmentOff"
+        android:label="fragment_view_pager_off"
+        tools:layout="@layout/fragment_view_pager_off" />
+</navigation>

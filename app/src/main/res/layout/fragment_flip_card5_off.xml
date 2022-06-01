@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/fragment1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:context=".offlinemode.fragmentflipcardoff.FlipCardFragment5Off">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/flip_layout"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/cart_front"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/bg_flipcart_behind"
+                        android:fontFamily="@font/brandon2"
+                        android:gravity="center"
+
+                        android:textAlignment="center"
+                        android:textColor="@color/gold"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/cart_behind"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:alpha="0"
+                        android:background="@drawable/bg_flipcart_front2"
+                        android:fontFamily="@font/brandon2"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/nearBlack"
+                        android:textSize="15sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/mButtonSpeak"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/nearBlack"
+                        android:enabled="false"
+                        android:fontFamily="@font/brandon2"
+                        android:src="@drawable/ic_volumeoff"
+                        android:text="Say"
+                        android:textColor="@color/gold"
+                        android:textSize="15sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cart_behind" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/flip_layout1"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/cart_front1"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/bg_flipcart_front2"
+                        android:fontFamily="@font/brandon2"
+                        android:gravity="center"
+
+                        android:textAlignment="center"
+                        android:textColor="@color/nearBlack"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/cart_behind1"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:alpha="0"
+                        android:background="@drawable/bg_flipcart_behind"
+                        android:fontFamily="@font/brandon2"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/gold"
+                        android:textSize="15sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/mButtonSpeak1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/nearBlack"
+                        android:fontFamily="@font/brandon2"
+                        android:src="@drawable/ic_volumeoff"
+                        android:text="Say"
+                        android:textColor="@color/gold"
+                        android:textSize="15sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cart_behind1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:context=".fragmentflipcard.FlipCardFragment1">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/flip_layout2"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/cart_front2"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/bg_flipcart_behind"
+                        android:fontFamily="@font/brandon2"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/gold"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/cart_behind2"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:alpha="0"
+                        android:background="@drawable/bg_flipcart_front2"
+                        android:fontFamily="@font/brandon2"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/nearBlack"
+                        android:textSize="15sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/mButtonSpeak2"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/nearBlack"
+                        android:fontFamily="@font/brandon2"
+                        android:src="@drawable/ic_volumeoff"
+                        android:text="Say"
+                        android:textColor="@color/gold"
+                        android:textSize="15sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cart_behind2" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/flip_layout3"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/cart_front3"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/bg_flipcart_front2"
+                        android:fontFamily="@font/brandon2"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/nearBlack"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/cart_behind3"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:alpha="0"
+                        android:background="@drawable/bg_flipcart_behind"
+                        android:fontFamily="@font/brandon2"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/gold"
+                        android:textSize="15sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/mButtonSpeak3"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/nearBlack"
+                        android:fontFamily="@font/brandon2"
+                        android:src="@drawable/ic_volumeoff"
+                        android:text="Say"
+                        android:textColor="@color/gold"
+                        android:textSize="15sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cart_behind3" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:context=".fragmentflipcard.FlipCardFragment1">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/flip_layout4"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/cart_front4"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/bg_flipcart_behind"
+                        android:fontFamily="@font/brandon2"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/gold"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/cart_behind4"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:alpha="0"
+                        android:background="@drawable/bg_flipcart_front2"
+                        android:fontFamily="@font/brandon2"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/nearBlack"
+                        android:textSize="15sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/mButtonSpeak4"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/nearBlack"
+                        android:fontFamily="@font/brandon2"
+                        android:src="@drawable/ic_volumeoff"
+                        android:text="Say"
+                        android:textColor="@color/gold"
+                        android:textSize="15sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cart_behind4" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/flip_layout5"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/cart_front5"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/bg_flipcart_front2"
+                        android:fontFamily="@font/brandon2"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/nearBlack"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/cart_behind5"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:alpha="0"
+                        android:background="@drawable/bg_flipcart_behind"
+                        android:fontFamily="@font/brandon2"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/gold"
+                        android:textSize="15sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/mButtonSpeak5"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/nearBlack"
+                        android:fontFamily="@font/brandon2"
+                        android:src="@drawable/ic_volumeoff"
+                        android:text="Say"
+                        android:textColor="@color/gold"
+                        android:textSize="15sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cart_behind5" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
